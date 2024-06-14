@@ -2,8 +2,9 @@
 #6/5/24
 
 def timeSaved(speedLimit, speedTraveling, distance):
-    timeIfLimit = (distance / speedLimit) * 60 #Travel time in minutes of speed limit
-    timeIfUserSpeed = (distance / speedTraveling) * 60 #Travel time in minutes of user's speed
+    minutes = 60
+    timeIfLimit = (distance / speedLimit) * minutes #Travel time in minutes of speed limit
+    timeIfUserSpeed = (distance / speedTraveling) * minutes #Travel time in minutes of user's speed
     if timeIfLimit > timeIfUserSpeed:
         print("You are saving " + str(timeIfLimit - timeIfUserSpeed) + " minutes by traveling " + str(speedTraveling - speedLimit) + "mph above the speed limit.")
     elif timeIfLimit == timeIfUserSpeed:
